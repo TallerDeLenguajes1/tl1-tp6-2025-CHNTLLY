@@ -15,7 +15,6 @@ Console.WriteLine("valor de b:" + b);
 
 
 
-
 //TP6 - EJERCICIO 1 - Altamirano Santiago Joaquin
 string numeroS;
 int numeroI;
@@ -213,3 +212,46 @@ Console.WriteLine($"El maximo es {System.Math.Max(operando3af, operando3bf)}");
 Console.WriteLine($"El minimo es {System.Math.Min(operando3af, operando3bf)}");
 
 
+//TP6 - EJERCICIO 4 - Altamirano Santiago Joaquin
+string ingresado;
+
+
+Console.WriteLine("Ingrese una cadena de texto");
+ingresado = Console.ReadLine();
+Console.WriteLine($"El largo de la cadena ingresada es {ingresado.Length}");
+Console.WriteLine($"Subcadena de la cadena ingresada: {ingresado.Substring(5)}");
+//El apartado de escribir el resultado de la suma ya está resuelto en la funcion
+foreach (char elemento in ingresado)
+{
+    Console.Write(elemento);
+}
+
+bool contiene;
+
+contiene = ingresado.Contains("erdiavlo");
+if (contiene)
+{
+    Console.WriteLine("La cadena si contiene la subcadena");
+}
+else
+{
+    Console.WriteLine("La cadena no contiene la subcadena");
+}
+
+Console.WriteLine("Cadena en mayusculas:" + ingresado.ToUpper());
+Console.WriteLine("Cadena en minusculas:" + ingresado.ToLower());
+
+string separada;
+separada = "c,a,d,e,n,a,s,e,p,a,r,a,d,a";
+string[] vector = separada.Split(',');
+foreach (string elemento in vector)
+{
+    Console.Write(elemento);
+}
+
+string cadenaSuma = "456+789";
+string[] operandos = cadenaSuma.Split('+');
+float sumando1, sumando2;
+float.TryParse(operandos[0], out sumando1);
+float.TryParse(operandos[1], out sumando2);
+Sumar(sumando1, sumando2);
