@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/${workspaceFolderBasename}.csproj",
+                "${workspaceFolder}/tl1-tp6-2025-CHNTLLY.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/${workspaceFolderBasename}.csproj",
+                "${workspaceFolder}/tl1-tp6-2025-CHNTLLY.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/${workspaceFolderBasename}.csproj"
+                "${workspaceFolder}/tl1-tp6-2025-CHNTLLY.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
